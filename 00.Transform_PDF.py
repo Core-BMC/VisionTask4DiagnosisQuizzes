@@ -115,7 +115,7 @@ def process_all_pdfs(base_folder, start_case, end_case):
 # Process PDFs from case-1.pdf to case-318.pdf
 base_folder = "pdfs"
 start_case = 1
-end_case = 4
+end_case = 318
 all_history_texts, all_figure_legends = process_all_pdfs(base_folder, start_case, end_case)
 
 # Save results to files
