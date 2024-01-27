@@ -40,27 +40,29 @@ Replace the placeholders with your actual API keys to keep them secure and separ
    
 #
 #   
-## *Workflow*
-First, download the "Diagnosis-Please-Quizzes" PDF documents and place them in a pdfs folder. 
-
-Then, preprocess the PDF documents by running the 00.Transform_PDF.py script, followed by either 01.GPT.py or 01.GEMINI.py to analyze the images.
-
-#
-#
-## *Project Files*
-00.Transform_PDF.py: Preprocesses the PDF documents in the pdfs folder into images and texts.
-```bash
-python 00.Transform_PDF.py
-```
-
-01.GPT.py: Analyzes the preprocessed images using the GPT-4 Vision model.
-```bash
-python 01.GPT.py
-```
-01.GEMINI.py: Analyzes the preprocessed images using the Gemini Pro Vision model.
-```bash
-python 01.GEMINI.py
-```
+## *Workflow (files in this project)*
+1. First, download the **"Diagnosis-Please-Quizzes"** PDF documents and place them in a folder named pdfs.
+   
+   *If you want to use the included sample test, rename "TEST-case.pdf" to "case-1.pdf".*
+3. Ensure all PDF files are named in the format case-###.pdf, where ### is a number between 1 and 318.
+4. Use **00.Transform_PDF.py** to prepare the PDF documents by running:
+   #
+   00.Transform_PDF.py: Prepares the PDF documents in the pdfs folder by converting them into images.
+   ```bash
+   python 00.Transform_PDF.py
+   ```
+   #
+5. After preprocessing, you can run **01.GPT.py** or **01.GEMINI.py** to analyze the images.
+   #
+   01.GPT.py: Analyzes the preprocessed images using the GPT-4 Vision model.
+   ```bash
+   python 01.GPT.py
+   ```
+   #
+   01.GEMINI.py: Analyzes the preprocessed images using the Gemini Pro Vision model.
+   ```bash
+   python 01.GEMINI.py
+   ```
 
 #
 #
